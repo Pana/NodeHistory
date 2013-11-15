@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lateral On-Scroll Sliding with jQuery</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Lateral On-Scroll Sliding with jQuery - Timeline Example with CSS3" />
+        <meta name="keywords" content="lateral, sides, slide, scroll, jquery, css3, timeline" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css' />
+		<!--[if lt IE 9]>
+				<link rel="stylesheet" type="text/css" href="css/styleIE.css" />
+		<![endif]-->
+		<script type="text/javascript" src="js/modernizr.custom.11333.js"></script>
+		<style>
+			body{
+				background: #f9f9f9 url(images/cloth.jpg) repeat top left;
+			}
+		</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href="http://tympanus.net/Tutorials/TypographyEffects/">
+                    <strong>&laquo; Previous Demo: </strong>Typography Effects with CSS3 and jQuery
+                </a>
+                <span class="right">
+                    <a href="http://tympanus.net/codrops/2011/12/05/lateral-on-scroll-sliding-with-jquery/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div>
+			<div class="demos">
+				<a href="index.html">Default Demo</a>
+				<a class="current-demo" href="index2.html">Perspective Demo (Webkit only)</a>
+			</div>
+            <h1>Lateral On-Scroll Sliding with jQuery</h1>
+            <h2 class="ss-subtitle">Codrops Timeline</h2>
+			<div id="ss-links" class="ss-links">
+				<a href="#november">Nov</a>
+				<a href="#october">Oct</a>
+				<a href="#september">Sep</a>
+				<a href="#august">Aug</a>
+				<a href="#july">Jul</a>
+				<a href="#june">Jun</a>
+			</div>
+            <div id="ss-container" class="ss-container">
+                <div class="ss-row">
+                    <div class="ss-left">
+                        <h2 id="november">November</h2>
+                    </div>
+                    <div class="ss-right">
+                        <h2>2011</h2>
+                    </div>
+                </div>
+                <div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/TypographyEffects/" class="ss-circle ss-circle-1">Typography Effects with CSS3 and jQuery</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>November 28, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/TypographyEffects/">Typography Effects with CSS3 and jQuery</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <h3>
+                            <span>November 22, 2011</span>
+                            <a href="http://tympanus.net/Development/HoverClickTriggerCircle/">Hover and Click Trigger for Circular Elements with jQuery</a>
+                        </h3>
+                    </div>
+					<div class="ss-right">
+                        <a href="http://tympanus.net/Development/HoverClickTriggerCircle/" class="ss-circle ss-circle-2">Hover and Click Trigger for Circular Elements with jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+						<a href="http://tympanus.net/Tutorials/ElasticSlideshow/" class="ss-circle ss-circle-3">Elastic Image Slideshow with Thumbnail Preview</a>
+                    </div>
+					<div class="ss-right">
+                         <h3>
+                            <span>November 21, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/ElasticSlideshow/">Elastic Image Slideshow with Thumbnail Preview</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <h3>
+                            <span>November 18, 2011</span>
+                            <a href="http://tympanus.net/Development/FullscreenImageBlurEffect/">Fullscreen Image Blur Effect with HTML5</a>
+                        </h3>
+                    </div>
+					<div class="ss-right">
+                        <a href="http://tympanus.net/Development/FullscreenImageBlurEffect/" class="ss-circle ss-circle-4">Fullscreen Image Blur Effect with HTML5</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/InteractiveTypographyEffects/" class="ss-circle ss-circle-5">Interactive Typography Effects with HTML5</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>November 9, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/InteractiveTypographyEffects/">Interactive Typography Effects with HTML5</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/AnimatedButtons/" class="ss-circle ss-circle-6">Animated Buttons with CSS3</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>November 7, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/AnimatedButtons/">Animated Buttons with CSS3</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <h3>
+                            <span>November 2, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/OriginalHoverEffects/">Original Hover Effects with CSS3</a>
+                        </h3>
+                    </div>
+					<div class="ss-right">
+                        <a href="http://tympanus.net/Tutorials/OriginalHoverEffects/" class="ss-circle ss-circle-7">Original Hover Effects with CSS3</a>
+                    </div>
+                </div>
+				<div class="ss-row">
+                    <div class="ss-left">
+                        <h2 id="october">October</h2>
+                    </div>
+                    <div class="ss-right">
+                        <h2>2011</h2>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+                        <h3>
+                            <span>October 31, 2011</span>
+                            <a href="http://tympanus.net/Development/FullscreenImage3DEffect/">Fullscreen Image 3D Effect with CSS3 and jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/FullscreenImage3DEffect/" class="ss-circle ss-circle-8">Fullscreen Image 3D Effect with CSS3 and jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/" class="ss-circle ss-circle-9">Creative CSS3 Animation Menus</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>October 24, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/">Creative CSS3 Animation Menus</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/BlurMenu/" class="ss-circle ss-circle-10">Blur Menu with CSS3 Transitions</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>October 19, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/BlurMenu/">Blur Menu with CSS3 Transitions</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <h3>
+                            <span>October 17, 2011</span>
+                            <a href="http://tympanus.net/Development/WaveDisplayEffect/">Wave Display Effect with jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/WaveDisplayEffect/" class="ss-circle ss-circle-11">Wave Display Effect with jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/FlexibleSlideToTopAccordion/" class="ss-circle ss-circle-12">Flexible Slide-to-top Accordion</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>October 12, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/FlexibleSlideToTopAccordion/">Flexible Slide-to-top Accordion</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <h3>
+                            <span>October 10, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/CircleNavigationEffect/">Circle Navigation Effect with CSS3</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Tutorials/CircleNavigationEffect/" class="ss-circle ss-circle-13">Circle Navigation Effect with CSS3</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/DraggableImageBoxesGrid/" class="ss-circle ss-circle-14">Draggable Image Boxes Grid</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>October 7, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/DraggableImageBoxesGrid/">Draggable Image Boxes Grid</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row">
+                    <div class="ss-left">
+                        <h2 id="september">September</h2>
+                    </div>
+                    <div class="ss-right">
+                        <h2>2011</h2>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+                        <h3>
+                            <span>September 30, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/ScrollbarVisibility/">Scrollbar Visibility with jScrollPane</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Tutorials/ScrollbarVisibility/" class="ss-circle ss-circle-15">Scrollbar Visibility with jScrollPane</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Development/MultiLevelPhotoMap/" class="ss-circle ss-circle-16">Multi-level Photo Map</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>September 27, 2011</span>
+                            <a href="http://tympanus.net/Development/MultiLevelPhotoMap/">Multi-level Photo Map</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/ResponsiveImageGallery/" class="ss-circle ss-circle-17">Responsive Image Gallery with Thumbnail Carousel</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>September 20, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/ResponsiveImageGallery/">Responsive Image Gallery with Thumbnail Carousel</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+						<h3>
+                            <span>September 12, 2011</span>
+                            <a href="http://tympanus.net/Development/Elastislide/">Elastislide - A Responsive jQuery Carousel Plugin</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/Elastislide/" class="ss-circle ss-circle-18">Elastislide - A Responsive jQuery Carousel Plugin</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Development/Slicebox/" class="ss-circle ss-circle-19">Slicebox - A fresh 3D image slider with graceful fallback </a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>September 5, 2011</span>
+                            <a href="http://tympanus.net/Development/Slicebox/">Slicebox - A fresh 3D image slider with graceful fallback </a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row">
+                    <div class="ss-left">
+                        <h2 id="august">August</h2>
+                    </div>
+                    <div class="ss-right">
+                        <h2>2011</h2>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+						<h3>
+                            <span>August 30, 2011</span>
+                            <a href="http://tympanus.net/Development/AutomaticImageMontage/">Automatic Image Montage with jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/AutomaticImageMontage/" class="ss-circle ss-circle-20">Automatic Image Montage with jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Development/ImageZoomTour/" class="ss-circle ss-circle-21">Image Zoom Tour with jQuery</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>August 23, 2011</span>
+                            <a href="http://tympanus.net/Development/ImageZoomTour/">Image Zoom Tour with jQuery</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+						<h3>
+                            <span>August 16, 2011</span>
+                            <a href="http://tympanus.net/Development/CircularContentCarousel/">Circular Content Carousel with jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/CircularContentCarousel/" class="ss-circle ss-circle-22">Circular Content Carousel with jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/PortfolioImageNavigation/" class="ss-circle ss-circle-23">Portfolio Image Navigation with jQuery</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>August 9, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/PortfolioImageNavigation/">Portfolio Image Navigation with jQuery</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+						<h3>
+                            <span>August 4, 2011</span>
+                            <a href="http://tympanus.net/Development/FullscreenGridPortfolioTemplate/">Expanding Fullscreen Grid Portfolio</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/FullscreenGridPortfolioTemplate/" class="ss-circle ss-circle-24">Expanding Fullscreen Grid Portfolio</a>
+                    </div>
+                </div>
+				<div class="ss-row">
+                    <div class="ss-left">
+                        <h2 id="july">July</h2>
+                    </div>
+                    <div class="ss-right">
+                        <h2>2011</h2>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Development/ContentRotator/example1.html" class="ss-circle ss-circle-25">Content Rotator with jQuery</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>July 29, 2011</span>
+                            <a href="http://tympanus.net/Development/ContentRotator/example1.html">Content Rotator with jQuery</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+						<h3>
+                            <span>July 22, 2011</span>
+                            <a href="http://tympanus.net/Development/VerticalSlidingAccordion/example1.html">Vertical Sliding Accordion with jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/VerticalSlidingAccordion/example1.html" class="ss-circle ss-circle-26">Vertical Sliding Accordion with jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-medium">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html" class="ss-circle ss-circle-27">Animated Text and Icon Menu with jQuery</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>July 12, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html">Animated Text and Icon Menu with jQuery</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+						<h3>
+                            <span>July 5, 2011</span>
+                            <a href="http://tympanus.net/Tutorials/FullscreenSlideshowAudio/">Fullscreen Slideshow with HTML5 Audio and jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Tutorials/FullscreenSlideshowAudio/" class="ss-circle ss-circle-30">Fullscreen Slideshow with HTML5 Audio and jQuery</a>
+                    </div>
+                </div>
+				<div class="ss-row ss-large">
+                    <div class="ss-left">
+                        <a href="http://tympanus.net/Development/SlidingBackgroundImageMenu/example5.html" class="ss-circle ss-circle-28">Sliding Background Image Menu with jQuery</a>
+                    </div>
+                    <div class="ss-right">
+                        <h3>
+                            <span>July 3, 2011</span>
+                            <a href="http://tympanus.net/Development/SlidingBackgroundImageMenu/example5.html">Sliding Background Image Menu with jQuery</a>
+                        </h3>
+                    </div>
+                </div>
+				<div class="ss-row">
+                    <div class="ss-left">
+                        <h2 id="june">June</h2>
+                    </div>
+                    <div class="ss-right">
+                        <h2>2011</h2>
+                    </div>
+                </div>
+				<div class="ss-row ss-small">
+                    <div class="ss-left">
+                       <h3>
+                            <span>June 9, 2011</span>
+                            <a href="http://tympanus.net/Development/GridNavigationEffects/example5.html">Grid Navigation Effects with jQuery</a>
+                        </h3>
+                    </div>
+                    <div class="ss-right">
+						<a href="http://tympanus.net/Development/GridNavigationEffects/example5.html" class="ss-circle ss-circle-29">Grid Navigation Effects with jQuery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="./js/effect2.js"></script>
+    </body>
+</html>
