@@ -25,9 +25,12 @@ You can see all the Node.js version's release time, and download them, and inter
 
 ## Node.js relate History
 
+* 2013.11.27 PayPal宣布使用Node.js重写支付系统(该系统为PayPal带来35亿$收入)(在8周内完成), 并发布了安全和可扩展的[Krakenjs](http://krakenjs.com)框架
 * 2013.11    Npm因为访问量过大(7亿下载量, 40亿访问量, 4W开发者, 5W模块)Down了三次, 为了保证Npm的良好运营, Nodejitsu发起了[scalenpm](http://scalenpm.org)运动(30天筹集20W$). 开发者积极参与2天11W, 3天15W, 4天18W, 5天完成 
 * 2013.10.14 Node.js博客平台Ghost github开源
+* 2013.10.11 Groupon宣布成功将之前Rails开发系统迁移到Node.js平台, 并缩短了整体业务响应时间
 * 2013.9.18 Strongloop 融资$800M
+* 2012.10   LinkedIn宣布将手机平台后端服务迁移到Node.js,并大大减少服务器数量
 
 
 
