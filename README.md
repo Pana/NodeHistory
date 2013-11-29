@@ -25,6 +25,7 @@ You can see all the Node.js version's release time, and download them, and inter
 
 ## Node.js relate History
 
+* 2013.11    Npm因为访问量过大(7亿下载量, 40亿访问量, 4W开发者, 5W模块)Down了三次, 为了保证Npm的良好运营发起了[scalenpm](http://scalenpm.org)运动(30天筹集20W$). 开发者积极参与2天11W, 3天15W, 4天18W, 5天完成 
 * 2013.10.14 Node.js博客平台Ghost github开源
 * 2013.9.18 Strongloop 融资$800M
 
