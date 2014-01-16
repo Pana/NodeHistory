@@ -16,6 +16,7 @@ And you can find the official [changelog](http://nodejs.org/changelog.html) here
 * 2011.7，Node在微软的支持下发布了其Windows版本。
 * 2011.11，Node超越Ruby on Rails，成为GitHub上关注度最高的项目（随后被Bootstrap项目超越，目前仍居第二）。
 * 2012.1，Ryan Dahl在对Node架构设计满意的情况下，将掌门人的身份转交给Isaac Z. Schlueter，自己转向一些研究项目。Isaac Z. Schlueter是Node的包管理器NPM的作者，之后Node的版本发布和bug修复等工作由他接手。
+* 2014.1.15 Node 掌门人更改为 [TJ Fontaine](https://twitter.com/tjfontaine), Isaac 专注于 NPM 相关开发和维护.
 * 2014.2 Node.js 0.12(1.0-RC)发布, API锁定, 下一版本即为1.0
 * 2014.? Node.js 1.0版本发布
 
