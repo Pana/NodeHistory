@@ -18,7 +18,9 @@ And you can find the official [changelog](http://nodejs.org/changelog.html) here
 * 2012.1，Ryan Dahl在对Node架构设计满意的情况下，将掌门人的身份转交给Isaac Z. Schlueter，自己转向一些研究项目。Isaac Z. Schlueter是Node的包管理器NPM的作者，之后Node的版本发布和bug修复等工作由他接手。
 * 2014.1.15 Node 掌门人更改为 [TJ Fontaine](https://twitter.com/tjfontaine), Isaac 成立公司 npm, Inc. 专注于 NPM 相关开发和维护.
 * 2014.3 Node.js 0.12(1.0-RC)发布, API锁定, 下一版本即为1.0
-* 2014.? Node.js 1.0版本发布
+* 2014.7.4 TJ Holowaychuk [离开Node世界， 转投Go怀抱](https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b) 
+* 2014.10 Node 项目被fork， [node-forward](http://nodeforward.org/)创建社区，想用新的方式推动Node的发展
+ 
 
 
 
@@ -32,6 +34,3 @@ And you can find the official [changelog](http://nodejs.org/changelog.html) here
 * 2013.9.18 Strongloop 融资$800M
 * 2012.10   LinkedIn宣布将手机平台后端服务迁移到Node.js,并大大减少服务器数量
 
-
-
-Strongloop竞争对手: Parse, Stackmob, Kinvey, feedhenry
