@@ -21,6 +21,11 @@ And you can find the official [changelog](http://nodejs.org/changelog.html) here
 * 2014.7.4 TJ Holowaychuk [离开Node世界， 转投Go怀抱](https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b) 
 * 2014.10 Node 项目被fork， [node-forward](http://nodeforward.org/)创建社区，想用新的方式推动Node的发展
 * 2014.10.13 [Node.js Advisory Board](https://www.joyent.com/blog/node-js-advisory-board) 以一种开发，自由的方式，推动 Node 项目发展
+* 2015.1 iojs 1.0 发布
+* 2015.6 Node.js 基金会成立
+* 2015.10 Node.js 1.0 发布 (同iojs合并完成)
+* 2015.12 第一届 Node.js Interactive 大会举办
+
  
 
 
